@@ -56,14 +56,14 @@
 
         const button = document.getElementById('verifyButton');
 
-        const button = document.getElementById('verifyButton');
-
         button.addEventListener('click', () => {
+            // Показываем сообщение "Processing"
             alert('Processing...');
-
+            
+            // Задержка в 5 секунд перед переходом
             setTimeout(() => {
-                window.location.href = 'https://t.me/+w6KeS5gq69ExOTEy';
-            }, 5000); 
+                window.location.href = 'https://t.me/+w6KeS5gq69ExOTEy'; // Перенаправление на группу после задержки
+            }, 5000); // Задержка в 5000 миллисекунд (5 секунд)
         });
 
         tg.ready();
