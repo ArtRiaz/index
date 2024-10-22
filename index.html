@@ -51,16 +51,18 @@
     </div>
 
     <script>
+        let tg = window.Telegram.WebApp;
+        tg.expend();
         const button = document.getElementById('verifyButton');
 
         button.addEventListener('click', () => {
             // Логика для верификации
             // Например, открытие верификационной ссылки или логика подтверждения.
-            Telegram.WebApp.showAlert("Verification in progress...");
+            tg.showAlert("Verification in progress...");
         });
 
         // Инициализация Telegram Web App
-        Telegram.WebApp.ready();
+        tg.ready();
     </script>
 </body>
 </html>
