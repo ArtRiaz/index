@@ -52,7 +52,8 @@
 
     <script>
         let tg = window.Telegram.WebApp;
-        tg.expend();
+        tg.expand();  // Исправлено
+
         const button = document.getElementById('verifyButton');
 
         button.addEventListener('click', () => {
@@ -62,7 +63,7 @@
         });
 
         // Инициализация Telegram Web App
-        tg.ready();
+        tg.ready();  // Вызывается после expand
     </script>
 </body>
 </html>
