@@ -51,19 +51,12 @@
     </div>
 
     <script>
-        let tg = window.Telegram.WebApp;
-        tg.expand();  // Исправлено
-
         const button = document.getElementById('verifyButton');
 
         button.addEventListener('click', () => {
-            // Логика для верификации
-            // Например, открытие верификационной ссылки или логика подтверждения.
-            tg.showAlert("Verification in progress...");
+            // Перенаправление на Telegram группу
+            window.location.href = 'https://t.me/your_group_link'; // Замените 'your_group_link' на реальный URL вашей группы
         });
-
-        // Инициализация Telegram Web App
-        tg.ready();  // Вызывается после expand
     </script>
 </body>
 </html>
