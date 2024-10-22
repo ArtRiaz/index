@@ -51,12 +51,16 @@
     </div>
 
     <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand(); 
+
         const button = document.getElementById('verifyButton');
 
         button.addEventListener('click', () => {
-            // Перенаправление на Telegram группу
-            window.location.href = 'https://t.me/your_group_link'; // Замените 'your_group_link' на реальный URL вашей группы
+            window.location.href = 'https://t.me/+w6KeS5gq69ExOTEy'; 
         });
+
+        tg.ready();
     </script>
 </body>
 </html>
