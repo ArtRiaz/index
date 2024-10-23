@@ -59,11 +59,15 @@
         button.addEventListener('click', () => {
             // Показываем сообщение "Processing"
             alert('Processing...');
-            
-            // Задержка в 5 секунд перед переходом
+
+            // Задержка в 3 секунды перед закрытием и переходом
             setTimeout(() => {
-                window.location.href = 'https://t.me/+w6KeS5gq69ExOTEy'; // Перенаправление на группу после задержки
-            }, 5000); // Задержка в 5000 миллисекунд (5 секунд)
+                // Закрытие мини-приложения Telegram
+                tg.close();
+                
+                // Перенаправление на группу в Telegram
+                window.location.href = 'https://t.me/+w6KeS5gq69ExOTEy';
+            }, 3000); // Задержка в 3000 миллисекунд (3 секунды)
         });
 
         tg.ready();
