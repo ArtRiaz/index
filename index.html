@@ -57,6 +57,9 @@
         const button = document.getElementById('verifyButton');
 
         button.addEventListener('click', () => {
+            // Меняем текст кнопки на "Loading..."
+            button.textContent = 'Loading...';
+            button.disabled = true; // Отключаем кнопку для предотвращения повторных нажатий
             
             // Задержка в 3 секунды перед закрытием и переходом
             setTimeout(() => {
