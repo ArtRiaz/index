@@ -72,9 +72,16 @@
         const linkScreen = document.getElementById('link-screen');
 
         verifyButton.addEventListener('click', () => {
-            // Показываем экран с ссылками и скрываем главный экран
-            mainScreen.style.display = 'none';
-            linkScreen.style.display = 'flex';
+            // Меняем текст кнопки на "Loading..."
+            verifyButton.textContent = 'Loading...';
+            verifyButton.disabled = true; // Отключаем кнопку
+
+            // Задержка на 3 секунды перед переходом к следующему экрану
+            setTimeout(() => {
+                // Показываем экран с ссылками и скрываем главный экран
+                mainScreen.style.display = 'none';
+                linkScreen.style.display = 'flex';
+            }, 3000); // Задержка в 3000 миллисекунд (3 секунды)
         });
 
         tg.ready();
